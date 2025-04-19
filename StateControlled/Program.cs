@@ -1,6 +1,6 @@
 ﻿//Temoso Nare
 using System;
-//using System.Windows.Forms;
+using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -42,13 +42,13 @@ namespace StateControlledLoops
         }
         static bool IsAnotherOne()
         {
-            //return MessageBox.Show("Another mark (Y/N)?", "Marks", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
-            
+            return MessageBox.Show("Another mark (Y/N)?", "Marks", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+            /*
             Console.Write("Another Mark (Y/N) ? :");
             bool isAnotherOne = Console.ReadKey().KeyChar.ToString().ToUpper() == "Y";
             Console.WriteLine();
             return isAnotherOne;
-            
+            */
 
         }
     }
